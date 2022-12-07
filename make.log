@@ -1,0 +1,77 @@
+vcs -V -sverilog +vc -Mupdate -line -full64 +vcs+vcdpluson -debug_pp sys_defs.svh testbench/map_table_testbench.sv verilog/map_table.sv  -o module_simv
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-debug_pp' will be deprecated in a future release.  Please use 
+  '-debug_acc+pp+dmptf -debug_region+cell+encrypt' instead.
+
+/usr/caen/vcs-2020.12-SP2-1/linux64/bin/vcs1 -Mcc=gcc -Mcplusplus=g++ -Masflags= -Mcfl= -pipe -fPIC -O -I/usr/caen/vcs-2020.12-SP2-1/include  -Mxllcflags= -Mxcflags= -pipe -fPIC -I/usr/caen/vcs-2020.12-SP2-1/include -Mldflags= -rdynamic  -Mout=module_simv -Mamsrun="" -Mvcsaceobjs="" -Mobjects=" /usr/caen/vcs-2020.12-SP2-1/linux64/lib/libvirsim.so /usr/caen/vcs-2020.12-SP2-1/linux64/lib/liberrorinf.so /usr/caen/vcs-2020.12-SP2-1/linux64/lib/libsnpsmalloc.so /usr/caen/vcs-2020.12-SP2-1/linux64/lib/libvfs.so " -Mexternalobj= -Msaverestoreobj=/usr/caen/vcs-2020.12-SP2-1/linux64/lib/vcs_save_restore_new.o -Mcrt0= -Mcrtn="" -Mcsrc="" -Mupdate -Msyslibs=-ldl  -V +vc -line -full64 +vcs+vcdpluson -Xcbug=0x1 -o module_simv -picarchive +vcsd +itf+/usr/caen/vcs-2020.12-SP2-1/linux64/lib/vcsdp.tab +cli+1 -debug=4 +memcbk -sverilog +vpi -gen_obj sys_defs.svh testbench/map_table_testbench.sv verilog/map_table.sv  
+                         Chronologic VCS (TM)
+      Version R-2020.12-SP2-1_Full64 -- Tue Mar  8 20:51:57 2022
+
+                    Copyright (c) 1991 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option 'debug=4' will be deprecated in a future release.  Please use 
+  '-debug_acc+pp+f+fn+dmptf -debug_region+cell+encrypt' instead.
+
+Parsing design file 'sys_defs.svh'
+
+Warning-[TMR] Text macro redefined
+sys_defs.svh, 153
+  Text macro (ROB_SIZE) is redefined. The last definition will override 
+  previous ones.
+  Location of previous definition: sys_defs.svh, 30.
+  Previous value: 32 
+
+Parsing design file 'testbench/map_table_testbench.sv'
+
+Error-[IND] Identifier not declared
+testbench/map_table_testbench.sv, 44
+  Identifier 'arch_reg_1_i' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+
+
+Error-[IND] Identifier not declared
+testbench/map_table_testbench.sv, 45
+  Identifier 'arch_reg_2_i' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+
+
+Error-[IND] Identifier not declared
+testbench/map_table_testbench.sv, 53
+  Identifier 'preg_tag_1_o' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+
+
+Error-[IND] Identifier not declared
+testbench/map_table_testbench.sv, 54
+  Identifier 'preg_tag_2_o' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+
+
+Error-[IND] Identifier not declared
+testbench/map_table_testbench.sv, 55
+  Identifier 'preg_ready_1_o' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+
+
+Error-[IND] Identifier not declared
+testbench/map_table_testbench.sv, 56
+  Identifier 'preg_ready_2_o' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+
+Parsing design file 'verilog/map_table.sv'
+2 warnings
+6 errors
+CPU time: .107 seconds to compile
